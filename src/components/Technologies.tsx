@@ -9,7 +9,7 @@ type TechItem = {
   rating: number
 }
 
-const techsCache: Promise<TechItem[]> = fetch("/data.json").then((response) => response.json()) as Promise<TechItem[]>
+const techsCache: Promise<TechItem[]> = fetch(`${import.meta.env.BASE_URL}data.json`).then((response) => response.json()) as Promise<TechItem[]>
 
 // Helper function to match exact badge styles from the image
 const getBadgeStyles = (badge: string) => {

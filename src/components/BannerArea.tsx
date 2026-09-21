@@ -1,4 +1,4 @@
-
+import bannerImage from '../assets/banner-stack.png'
 
 const BannerArea = () => {
     return (
@@ -18,7 +18,7 @@ const BannerArea = () => {
           </div>
         </div>
 
-        <img src="/src/assets/banner-stack.png" alt="" />
+        <img src={bannerImage} alt="" />
 
       </div>
     );

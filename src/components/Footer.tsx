@@ -1,3 +1,5 @@
+import logo from '../assets/logo-text.png'
+
 const Footer = () => {
     return (
        <footer className="mt-30">
@@ -5,7 +7,7 @@ const Footer = () => {
     <div className="flex justify-between items-center container mx-auto border-b-2 p-4 border-gray-100">
     
         <div className="text-[#475569]">
-          <img className="my-5" src="/src/assets/logo-text.png" alt="" />
+          <img className="my-5" src={logo} alt="" />
           <p className="text-[#64748B]">Curated tools, technologies, and resources for developers building <br />
             modern software.</p>
             <ul className="my-5 flex gap-5 font-bold">
